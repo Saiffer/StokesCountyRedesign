@@ -1,0 +1,307 @@
+/* NORMALIZE */
+
+*,body,div,img, .container, .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+
+/*
+*
+* ==========================================
+* CUSTOM UTIL CLASSES
+* ==========================================
+*
+*/
+/* LOGO IMAGES STYLES */
+.header-images {
+width: 100%;
+position: relative;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
+}
+
+.responsive-logo {
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    max-width: 50%;
+    height: auto;
+}
+
+
+
+
+
+/* LOGO IMAGES STYLES */
+/* MEGAMENU STYLES */
+.megamenu {
+    position: static;
+  }
+  
+.megamenu .dropdown-menu {
+    background: none;
+    border: none;
+    width: 100%;
+  }
+
+ul {
+    list-style: none;
+}
+
+/* header > nav {
+  background-color: rgb(108, 152, 197);
+  } */
+
+
+
+
+/* MEGAMENU STYLES */
+
+
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: rgb(108, 152, 197); /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidebar */
+  }
+  
+  /* The sidebar links */
+  .sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #ffffff;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidebar a:hover {
+    color: #444;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  /* The button used to open the sidebar */
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: rgb(108, 152, 197);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+  }
+  
+  
+  /* MAIN GRID CONTAINER AND GRID-CARDS */
+  .main-heading {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    /* padding-bottom: 5%; */
+  }
+
+  .grid-aside {
+    padding: 10px;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: 2fr 8fr 2fr;
+    
+}
+
+  .container-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-column-gap: 1ch;
+    grid-row-gap: 1ch;
+    padding-bottom: 5%;
+  }
+
+  .aside-link {
+    padding-top: 5%;
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+  }
+
+/* CONTACT PAGE CONTAINER GRID */
+
+.contact-form__grid {
+  display: grid;
+  grid-template-areas: 'item1 item1'
+                       'item2 item3'
+                       'item4 item5'
+                       'item6 item7'
+                       'item8 item9'; 
+  justify-content: space-evenly;
+  grid-gap: 2ch;
+  border: 1px solid black;                     
+}
+
+.item1 {
+  grid-area: item1;
+  text-align: center;
+}
+.item2 {
+  grid-area: item2;
+
+}
+.item3 {
+  grid-area: item3;
+}
+.item4 {
+  grid-area: item4;
+}
+.item5 {
+  grid-area: item5;
+}
+.item6 {
+  grid-area: item6;
+}
+.item7 {
+  grid-area: item7;
+}
+.item8 {
+  grid-area: item8;
+}
+.item9 {
+  grid-area: item9;
+}
+
+/* TABLE STYLES */
+tr, th, td {
+  border: 1px solid black;
+  text-align: center;
+}
+
+tr:nth-child(odd) {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* FOOTER STYLES */
+
+footer {
+  background-color: rgb(108, 152, 197);
+}
+
+.footer-container {
+  margin: 0 auto;
+}
+
+.footer-text {
+  color: #ffffff;
+  text-align: center;
+  margin: 0 auto;
+  display: block;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+    
+  }
+
+
+  @media screen and (max-width: 991px) {
+    .container-grid {
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-column-gap: 1%;
+      grid-row-gap: 1%;
+  }
+
+  section {
+    grid-area: 1 / span 3 / 2 / 4;
+    margin-bottom: 3%;
+    padding-bottom: 3%;
+  }
+
+
+  .aside-container {
+    position: absolute;
+    left: -10000;
+    visibility: hidden;
+    display: none;
+  }
+
+  .grid-container {
+    margin-bottom: 100px;
+  }
+  
+  }
+
+  @media screen and (max-width: 450px) {
+    .responsive-logo {
+      position: absolute;
+      left: 25%;
+      top: 25%;
+      max-width: 50%;
+      height: auto;
+  }
+
+  .container-grid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+}
+
+section {
+  margin-bottom: 35%;
+  padding-bottom: 35%;
+}
+
+.grid-container {
+  margin-bottom: 100px;
+}
+
+}
